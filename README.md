@@ -8,7 +8,8 @@ Our OS is Ubuntu 18.04.3 LTS. We will build a system or a virtual envoirnment us
 
 https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
 
-Copy the file lib.sh in your working directory where you have activated conda envoirnment. 
+Copy the file `lib.sh` in your working directory where you have activated conda envoirnment. 
 Run the following command. 
-`bash lib.sh         #This will install all the required libraries. Pleas select "Yes" when asked during libraries installation process.`
+`bash lib.sh `        
+This will install all the required libraries. Pleas select "Yes" when asked during libraries installation process.
 
