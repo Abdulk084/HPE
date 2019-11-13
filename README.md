@@ -17,7 +17,9 @@ This will install all the required libraries. Pleas select "Yes" when asked duri
 Create a folder with a name FCPC in your local machine. Download the following files from our GitHub FCPC into your local FCPC folder.
 
 
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
+ 1. FCPC.py 
+ 2. train.smi
+ 3. train_output.csv
+ 4. test.smi
+ 5. test_output.csv
+        
