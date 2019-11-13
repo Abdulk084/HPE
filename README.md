@@ -17,9 +17,9 @@ This will install all the required libraries. Pleas select "Yes" when asked duri
 Create a folder with a name FCPC in your local machine. Download the following files from our GitHub FCPC folder into your local FCPC folder.
 
 
- 1. FCPC.py    ## This is the code file to train and test the model.
- 2. train.smi  ## This contains SMILES strings for train set.
- 3. train_output.csv  ## This contains Activity column and SMILES strings column for train set.  
- 4. test.smi  ## This contains SMILES strings for test. set
- 5. test_output.csv  ## This contains Activity column and SMILES strings column for test set.
+ 1. `FCPC.py`    ## This is the code file to train and test the model.
+ 2. `train.smi`  ## This contains SMILES strings for train set.
+ 3. `train_output.csv`  ## This contains Activity column and SMILES strings column for train set.  
+ 4. `test.smi`  ## This contains SMILES strings for test. set
+ 5. `test_output.csv`  ## This contains Activity column and SMILES strings column for test set.
         
