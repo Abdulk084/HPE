@@ -14,12 +14,12 @@ Run the following command.
 This will install all the required libraries. Pleas select "Yes" when asked during libraries installation process.
 
 ### FCPC:
-Create a folder with a name FCPC in your local machine. Download the following files from our GitHub FCPC into your local FCPC folder.
+Create a folder with a name FCPC in your local machine. Download the following files from our GitHub FCPC folder into your local FCPC folder.
 
 
- 1. FCPC.py 
- 2. train.smi
- 3. train_output.csv
- 4. test.smi
- 5. test_output.csv
+ 1. FCPC.py    ## This is the code file to train and test the model.
+ 2. train.smi  ## This contains SMILES strings for train set.
+ 3. train_output.csv  ## This contains Activity column and SMILES strings column for train set.  
+ 4. test.smi  ## This contains SMILES strings for test. set
+ 5. test_output.csv  ## This contains Activity column and SMILES strings column for test set.
         
