@@ -10,5 +10,5 @@ https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubun
 
 Copy the file lib.sh in your working directory where you have activated conda envoirnment. 
 Run the following command. 
-bash lib.sh         #This will install all the required libraries. Pleas select "Yes" when asked during libraries installation process.
+`bash lib.sh         #This will install all the required libraries. Pleas select "Yes" when asked during libraries installation process.`
 
