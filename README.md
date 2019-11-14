@@ -23,3 +23,8 @@ Create a folder with a name FCPC in your local machine. Download the following f
  4. `test.smi`  ## This contains SMILES strings for test. set
  5. `test_output.csv`  ## This contains Activity column and SMILES strings column for test set.
         
+`CD` into FCPC local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
+
+`python FCPC.Py`
+
+After the training and testing is done, a file with a name `test_preds_FCPC.xlsx` will be generated which contains output for the test data using FCPC predictor. It also generates two other files with names `train_output.csv` and `test_output.csv` which contains the 2D physio-chemical features used in training FCPC predictor.
