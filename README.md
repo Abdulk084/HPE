@@ -87,3 +87,17 @@ Create a folder with a name MGC in your local machine. Download the following fi
 `python MGC.py`
 
 After the training and testing is done, a file with a name `test_preds_MGC.xlsx` will be generated which contains output for the test data using MGC predictor. 
+
+### MWC:
+Create a folder with a name MWC in your local machine. Download the following files from our GitHub MWC folder into your local MWC folder.
+
+
+ 1. `MWC.py`    ## This is the code file to train and test the model.
+ 2. `train.csv`  ## This contains Activity column and SMILES strings column for train set.  
+ 3. `test.csv`  ## This contains Activity column and SMILES strings column for test set.
+        
+`cd` into MWC local directory while keeping the conda envoirnment activated. Now run the following command which will train the MWC predictor on given train data.
+
+`python MWC.py`
+
+After the training and testing is done, a file with a name `test_preds_MWC.xlsx` will be generated which contains output for the test data using MWC predictor. 
