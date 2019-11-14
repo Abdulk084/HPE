@@ -23,7 +23,7 @@ Create a folder with a name FCPC in your local machine. Download the following f
  4. `test.smi`  ## This contains SMILES strings for test. set
  5. `test_output.csv`  ## This contains Activity column and SMILES strings column for test set.
         
-`CD` into FCPC local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
+`cd` into FCPC local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
 
 `python FCPC.py`
 
