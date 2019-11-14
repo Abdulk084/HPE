@@ -101,3 +101,23 @@ Create a folder with a name MWC in your local machine. Download the following fi
 `python MWC.py`
 
 After the training and testing is done, a file with a name `test_preds_MWC.xlsx` will be generated which contains output for the test data using MWC predictor. 
+
+
+### HPE:
+NOw the final model by ensembling the outputs of all individual six predictors. Create a folder with a name HPE in your local machine. Download the HPE.py file from our GitHub HPE folder into your local HPE folder. Also copy the following files into HPE folder as well.
+
+
+
+
+ 1. `test_preds_FCPC.xlsx`   ## From FCPC local folder.
+ 1. `test_preds_FCPCe.xlsx`  ## From FCPCe local folder. 
+ 1. `test_preds_C1DS.xlsx`   ## From C1DS local folder.
+ 1. `test_preds_C2DF.xlsx`   ## From C2DF local folder.
+ 1. `test_preds_MGC.xlsx`    ## From MGC local folder.
+ 1. `test_preds_MWC.xlsx`    ## From MWC local folder.
+ 1. `test.xlsx`              ## From C1DS local folder.This file contains the real activity values for test set.
+   
+        
+`cd` into HPE local directory while keeping the conda envoirnment activated. Now run the following command which print the Accuracies on the screen after ensembling the indvidual predictors outputs.
+
+`python HPE.py`
