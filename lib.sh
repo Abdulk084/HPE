@@ -10,5 +10,5 @@ conda install -c conda-forge matplotlib
 conda install -c rdkit -c mordred-descriptor mordred
 pip install padelpy
 pip install deepchem
-
+conda install xlrd
 
