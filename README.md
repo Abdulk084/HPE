@@ -73,3 +73,17 @@ Create a folder with a name C2DF in your local machine. Download the following f
 `python C2DF.py`
 
 After the training and testing is done, a file with a name `test_preds_C2DF.xlsx` will be generated which contains output for the test data using C2DF predictor. 
+
+### MGC:
+Create a folder with a name MGC in your local machine. Download the following files from our GitHub MGC folder into your local MGC folder.
+
+
+ 1. `MGC.py`    ## This is the code file to train and test the model.
+ 2. `train.csv`  ## This contains Activity column and SMILES strings column for train set.  
+ 3. `test.csv`  ## This contains Activity column and SMILES strings column for test set.
+        
+`cd` into MGC local directory while keeping the conda envoirnment activated. Now run the following command which will train the MGC predictor on given train data.
+
+`python MGC.py`
+
+After the training and testing is done, a file with a name `test_preds_MGC.xlsx` will be generated which contains output for the test data using MGC predictor. 
