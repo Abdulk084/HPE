@@ -25,6 +25,6 @@ Create a folder with a name FCPC in your local machine. Download the following f
         
 `CD` into FCPC local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
 
-`python FCPC.Py`
+`python FCPC.py`
 
 After the training and testing is done, a file with a name `test_preds_FCPC.xlsx` will be generated which contains output for the test data using FCPC predictor. It also generates two other files with names `train_output.csv` and `test_output.csv` which contains the 2D physio-chemical features used in training FCPC predictor.
