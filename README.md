@@ -38,8 +38,23 @@ Create a folder with a name FCPCe in your local machine. Download the following 
  2. `train.csv`  ## This contains Activity column and SMILES strings column for train set.  
  3. `test.csv`  ## This contains Activity column and SMILES strings column for test set.
         
-`cd` into FCPCe local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
+`cd` into FCPCe local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPCe predictor on given train data.
 
 `python FCPCe.py`
 
 After the training and testing is done, a file with a name `test_preds_FCPCe.xlsx` will be generated which contains output for the test data using FCPCe predictor. 
+
+
+### C1DS:
+Create a folder with a name C1DS in your local machine. Download the following files from our GitHub FCPCe folder into your local FCPC folder.
+
+
+ 1. `C1DS.py`    ## This is the code file to train and test the model.
+ 2. `train.xlsx`  ## This contains Activity column and SMILES strings column for train set.  
+ 3. `test.xlsx`  ## This contains Activity column and SMILES strings column for test set.
+        
+`cd` into C1DS local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
+
+`python C1DS.py`
+
+After the training and testing is done, a file with a name `test_preds_C1DS.xlsx` will be generated which contains output for the test data using C1DS predictor. 
