@@ -31,7 +31,7 @@ After the training and testing is done, a file with a name `test_preds_FCPC.xlsx
 
 
 ### FCPCe:
-Create a folder with a name FCPCe in your local machine. Download the following files from our GitHub FCPCe folder into your local FCPC folder.
+Create a folder with a name FCPCe in your local machine. Download the following files from our GitHub FCPCe folder into your local FCPCe folder.
 
 
  1. `FCPCe.py`    ## This is the code file to train and test the model.
@@ -46,15 +46,30 @@ After the training and testing is done, a file with a name `test_preds_FCPCe.xls
 
 
 ### C1DS:
-Create a folder with a name C1DS in your local machine. Download the following files from our GitHub FCPCe folder into your local FCPC folder.
+Create a folder with a name C1DS in your local machine. Download the following files from our GitHub C1DS folder into your local C1DS folder.
 
 
  1. `C1DS.py`    ## This is the code file to train and test the model.
  2. `train.xlsx`  ## This contains Activity column and SMILES strings column for train set.  
  3. `test.xlsx`  ## This contains Activity column and SMILES strings column for test set.
         
-`cd` into C1DS local directory while keeping the conda envoirnment activated. Now run the following command which will train the FCPC predictor on given train data.
+`cd` into C1DS local directory while keeping the conda envoirnment activated. Now run the following command which will train the C1DS predictor on given train data.
 
 `python C1DS.py`
 
 After the training and testing is done, a file with a name `test_preds_C1DS.xlsx` will be generated which contains output for the test data using C1DS predictor. 
+
+
+### C2DF:
+Create a folder with a name C2DF in your local machine. Download the following files from our GitHub C2DF folder into your local C2DF folder.
+
+
+ 1. `C2DF.py`    ## This is the code file to train and test the model.
+ 2. `train.csv`  ## This contains Activity column and SMILES strings column for train set.  
+ 3. `test.csv`  ## This contains Activity column and SMILES strings column for test set.
+        
+`cd` into C2DF local directory while keeping the conda envoirnment activated. Now run the following command which will train the C2DF predictor on given train data.
+
+`python C2DF.py`
+
+After the training and testing is done, a file with a name `test_preds_C2DF.xlsx` will be generated which contains output for the test data using C2DF predictor. 
