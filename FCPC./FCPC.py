@@ -155,7 +155,7 @@ padeldescriptor(mol_dir='train.smi',d_2d=True, d_3d=False,fingerprints=False, re
 # In[4]:
 
 
-trfile = open('train_output.csv', 'r')
+trfile = open('train.csv', 'r')
 line = trfile.readline()
 
 mols_train=[]
@@ -185,7 +185,7 @@ print('dataY_train Shape: '+str(np.shape(dataY_train)))
 # In[5]:
 
 
-trfile = open('test_output.csv', 'r')
+trfile = open('test.csv', 'r')
 line = trfile.readline()
 
 mols_test=[]
