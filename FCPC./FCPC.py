@@ -117,21 +117,7 @@ from padelpy import from_smiles
 # In[2]:
 
 
-padeldescriptor(mol_dir='test.smi',d_2d=True, d_3d=False,fingerprints=False, removesalt=True, retainorder=True,
-               
-               d_file='test_2D.csv',
-               
-               maxruntime=100000, threads=1)
 
-
-# In[3]:
-
-
-padeldescriptor(mol_dir='train.smi',d_2d=True, d_3d=False,fingerprints=False, removesalt=True, retainorder=True,
-               
-               d_file='train_2D.csv',
-               
-               maxruntime=100000, threads=1)
 
 
 # In[ ]:
@@ -160,12 +146,13 @@ line = trfile.readline()
 
 mols_train=[]
 dataY_train=[]
+smiles_train=[]
 
 for i, line in enumerate(trfile):
     line = line.rstrip().split(',')
     smiles = str(line[1])
     
-
+    smiles_train.append(smiles)
     
     
     Activity = str(line[0])
@@ -185,15 +172,31 @@ print('dataY_train Shape: '+str(np.shape(dataY_train)))
 # In[5]:
 
 
+
+
+
+
+
+with open('train.smi', 'w') as filehandle:
+    for listitem in smiles_train:
+        filehandle.write('%s\n' % listitem)
+
+
+
+
+
+
+
 trfile = open('test.csv', 'r')
 line = trfile.readline()
 
 mols_test=[]
 dataY_test=[]
-
+smiles_test=[]
 for i, line in enumerate(trfile):
     line = line.rstrip().split(',')
     smiles = str(line[1])
+    smiles_test.append(smiles)
     Activity = str(line[0])
     mol = Chem.MolFromSmiles(smiles)
     mols_test.append(mol)
@@ -209,6 +212,38 @@ print('dataY_test Shape: '+str(np.shape(dataY_test)))
 
 
 # In[6]:
+
+
+
+with open('test.smi', 'w') as filehandle:
+    for listitem in smiles_test:
+        filehandle.write('%s\n' % listitem)
+
+
+
+
+
+
+padeldescriptor(mol_dir='test.smi',d_2d=True, d_3d=False,fingerprints=False, removesalt=True, retainorder=True,
+               
+               d_file='test_2D.csv',
+              
+               maxruntime=100000, threads=1)
+
+
+# In[3]:
+
+
+padeldescriptor(mol_dir='train.smi',d_2d=True, d_3d=False,fingerprints=False, removesalt=True, retainorder=True,
+               
+               d_file='train_2D.csv',
+               
+               maxruntime=100000, threads=1)
+
+
+
+
+
 
 
 dataX_train=pd.read_csv('train_2D.csv')
@@ -706,4 +741,3 @@ with tf.Session() as sess:
     test_preds.to_excel(writer,sheet_name='test_preds')
     
     writer.save()
-
