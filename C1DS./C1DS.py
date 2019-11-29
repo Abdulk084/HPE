@@ -121,13 +121,13 @@ from padelpy import from_smiles
 
 
 
-train_data = pd.read_excel(r'train.xlsx')
+train_data = pd.read_csv('train.csv')
 
 
 # In[49]:
 
 
-test_data = pd.read_excel(r'test.xlsx')
+test_data = pd.read_csv('test.csv')
 
 
 # In[50]:
@@ -170,7 +170,7 @@ Y_test=np.array(test_data ['ACTIVITY'])
 # In[56]:
 
 
-full_data = pd.read_excel(r'data.xlsx')
+#full_data = pd.read_csv('data.csv')
 
 
 # In[57]:
@@ -178,10 +178,10 @@ full_data = pd.read_excel(r'data.xlsx')
 
 
 
-charset = set("".join(list(full_data.smiles))+"!E")
+charset = set("".join(list(train_data.smiles))+"!E")
 char_to_int = dict((c,i) for i,c in enumerate(charset))
 int_to_char = dict((i,c) for i,c in enumerate(charset))
-embed = max([len(smile) for smile in full_data.smiles]) + 5
+embed = max([len(smile) for smile in train_data.smiles]) + 5
 print (str(charset))
 print(len(charset), embed)
 
