@@ -17,7 +17,7 @@ This will install all the required libraries. Pleas select "Yes" when asked duri
 
 Following are the specific versions for various packges mentioned in `lib.sh`.
 
-tensorflow           1.13.1
+`tensorflow           1.13.1
 Keras                2.2.4
 scikit-learn         0.21.3 
 pandas               0.25.0
@@ -30,7 +30,7 @@ rdkit                2018.09.1
 mordred              1.2.0
 padelpy              0.1.6
 deepchem             2.2.1.dev54
-xlrd                 1.2.0
+xlrd                 1.2.0`
 
 
 ### FCPC:
