@@ -14,6 +14,25 @@ Run the following command.
 `bash lib.sh `        
 This will install all the required libraries. Pleas select "Yes" when asked during libraries installation process.
 
+
+Following are the specific versions for various packges mentioned in `lib.sh`.
+
+tensorflow           1.13.1
+Keras                2.2.4
+scikit-learn         0.21.3 
+pandas               0.25.0
+numpy                1.16.4
+scipy                1.2.1
+openpyxl             2.6.2
+xlsxwriter           1.1.8
+matplotlib           3.1.0
+rdkit                2018.09.1
+mordred              1.2.0
+padelpy              0.1.6
+deepchem             2.2.1.dev54
+xlrd                 1.2.0
+
+
 ### FCPC:
 Create a folder with a name FCPC in your local machine. Download the following files from our GitHub FCPC folder into your local FCPC folder.
 
